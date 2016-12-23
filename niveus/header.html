@@ -20,7 +20,10 @@
   <meta name="theme-color" content="#ffffff" />
   {% if posts.length %}
   {% if post.title == 0 %}
-    <meta name="robots" content="noindex" />
+  <meta name="robots" content="noindex" />
+  {% /if %}
+  {% if prevPageUrl.length %}
+  <meta name="robots" content="noindex" />
   {% /if %}
   {% /if %}
   <link href="/asset/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
